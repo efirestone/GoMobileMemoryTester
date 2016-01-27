@@ -1,0 +1,384 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA038B681C57D8CE00CF52F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA038B671C57D8CE00CF52F5 /* AppDelegate.swift */; };
+		AA038B6A1C57D8CF00CF52F5 /* MemoryTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA038B691C57D8CF00CF52F5 /* MemoryTestController.swift */; };
+		AA038B6F1C57D8CF00CF52F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA038B6D1C57D8CF00CF52F5 /* Main.storyboard */; };
+		AA038B711C57D8CF00CF52F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA038B701C57D8CF00CF52F5 /* Assets.xcassets */; };
+		AA038B741C57D8CF00CF52F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA038B721C57D8CF00CF52F5 /* LaunchScreen.storyboard */; };
+		AA46395D1C57E76800670B63 /* NativeMemoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA46395C1C57E76800670B63 /* NativeMemoryManager.swift */; };
+		AA46395F1C57EB7500670B63 /* GoMobileMemoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA46395E1C57EB7500670B63 /* GoMobileMemoryManager.swift */; };
+		AA4639651C57F46F00670B63 /* GoMemory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA4639641C57F46F00670B63 /* GoMemory.framework */; };
+		AA4639671C582E7E00670B63 /* UIDevice+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4639661C582E7E00670B63 /* UIDevice+Additions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA038B641C57D8CE00CF52F5 /* GoMobileTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoMobileTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA038B671C57D8CE00CF52F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA038B691C57D8CF00CF52F5 /* MemoryTestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryTestController.swift; sourceTree = "<group>"; };
+		AA038B6E1C57D8CF00CF52F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA038B701C57D8CF00CF52F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA038B731C57D8CF00CF52F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AA038B751C57D8CF00CF52F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Other/Info.plist; sourceTree = "<group>"; };
+		AA46395C1C57E76800670B63 /* NativeMemoryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeMemoryManager.swift; sourceTree = "<group>"; };
+		AA46395E1C57EB7500670B63 /* GoMobileMemoryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoMobileMemoryManager.swift; sourceTree = "<group>"; };
+		AA4639631C57F45100670B63 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; name = src; path = GoSources/src; sourceTree = SOURCE_ROOT; };
+		AA4639641C57F46F00670B63 /* GoMemory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoMemory.framework; path = GoSources/Products/GoMemory.framework; sourceTree = SOURCE_ROOT; };
+		AA4639661C582E7E00670B63 /* UIDevice+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Additions.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA038B611C57D8CE00CF52F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA4639651C57F46F00670B63 /* GoMemory.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA038B5B1C57D8CE00CF52F5 = {
+			isa = PBXGroup;
+			children = (
+				AA038B661C57D8CE00CF52F5 /* Source */,
+				AA038B651C57D8CE00CF52F5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA038B651C57D8CE00CF52F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA038B641C57D8CE00CF52F5 /* GoMobileTesting.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA038B661C57D8CE00CF52F5 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				AA4639681C582F0000670B63 /* UI */,
+				AA4639691C582F0C00670B63 /* Performance Controllers */,
+				AA46396A1C582F2C00670B63 /* Go Sources */,
+				AA46396C1C582F4F00670B63 /* Resources */,
+				AA46396B1C582F3900670B63 /* App */,
+				AA4639641C57F46F00670B63 /* GoMemory.framework */,
+			);
+			name = Source;
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		AA4639681C582F0000670B63 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				AA038B671C57D8CE00CF52F5 /* AppDelegate.swift */,
+				AA038B691C57D8CF00CF52F5 /* MemoryTestController.swift */,
+				AA038B6D1C57D8CF00CF52F5 /* Main.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		AA4639691C582F0C00670B63 /* Performance Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AA46395E1C57EB7500670B63 /* GoMobileMemoryManager.swift */,
+				AA46395C1C57E76800670B63 /* NativeMemoryManager.swift */,
+				AA4639661C582E7E00670B63 /* UIDevice+Additions.swift */,
+			);
+			name = "Performance Controllers";
+			sourceTree = "<group>";
+		};
+		AA46396A1C582F2C00670B63 /* Go Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA4639631C57F45100670B63 /* src */,
+			);
+			name = "Go Sources";
+			sourceTree = "<group>";
+		};
+		AA46396B1C582F3900670B63 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AA038B721C57D8CF00CF52F5 /* LaunchScreen.storyboard */,
+				AA038B751C57D8CF00CF52F5 /* Info.plist */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		AA46396C1C582F4F00670B63 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AA038B701C57D8CF00CF52F5 /* Assets.xcassets */,
+			);
+			name = Resources;
+			path = ../Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA038B631C57D8CE00CF52F5 /* GoMobileMemoryTester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA038B781C57D8CF00CF52F5 /* Build configuration list for PBXNativeTarget "GoMobileMemoryTester" */;
+			buildPhases = (
+				AA4639601C57EF0B00670B63 /* Compile Go Sources */,
+				AA038B601C57D8CE00CF52F5 /* Sources */,
+				AA038B611C57D8CE00CF52F5 /* Frameworks */,
+				AA038B621C57D8CE00CF52F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoMobileMemoryTester;
+			productName = GoMobileTeesting;
+			productReference = AA038B641C57D8CE00CF52F5 /* GoMobileTesting.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA038B5C1C57D8CE00CF52F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Square, Inc.";
+				TargetAttributes = {
+					AA038B631C57D8CE00CF52F5 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = AA038B5F1C57D8CE00CF52F5 /* Build configuration list for PBXProject "GoMobileMemoryTester" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA038B5B1C57D8CE00CF52F5;
+			productRefGroup = AA038B651C57D8CE00CF52F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA038B631C57D8CE00CF52F5 /* GoMobileMemoryTester */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA038B621C57D8CE00CF52F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA038B741C57D8CF00CF52F5 /* LaunchScreen.storyboard in Resources */,
+				AA038B711C57D8CF00CF52F5 /* Assets.xcassets in Resources */,
+				AA038B6F1C57D8CF00CF52F5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AA4639601C57EF0B00670B63 /* Compile Go Sources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Compile Go Sources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Prerequisites for this step:\n#  1. Install Go from https://golang.org/dl/\n#  2. Install GoMobile by executing:\n#       go get golang.org/x/mobile/cmd/gomobile\n#  3. Initialize GoMobile by executing:\n#       gomobile init\n\nROOT_DIR=\"$SRCROOT/GoSources\"\nOUTPUT_DIR=\"$ROOT_DIR/Products\"\nDEV_PATH=\"$HOME/Development/go\"\nexport GOPATH=\"$ROOT_DIR:$DEV_PATH\"\n\n# Add Golang compiler to the path.\n# WARNING: If the path contains a space then Go will fail as of Go 1.5.2\nexport PATH=\"$PATH:/usr/local/go/bin:$DEV_PATH/bin\"\n\ngomobile bind -target ios -prefix \"Go\" -o \"$OUTPUT_DIR/GoMemory.framework\" GoMemory";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA038B601C57D8CE00CF52F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA038B681C57D8CE00CF52F5 /* AppDelegate.swift in Sources */,
+				AA46395D1C57E76800670B63 /* NativeMemoryManager.swift in Sources */,
+				AA4639671C582E7E00670B63 /* UIDevice+Additions.swift in Sources */,
+				AA46395F1C57EB7500670B63 /* GoMobileMemoryManager.swift in Sources */,
+				AA038B6A1C57D8CF00CF52F5 /* MemoryTestController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AA038B6D1C57D8CF00CF52F5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA038B6E1C57D8CF00CF52F5 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ../Resources;
+			sourceTree = "<group>";
+		};
+		AA038B721C57D8CF00CF52F5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA038B731C57D8CF00CF52F5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ../Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA038B761C57D8CF00CF52F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA038B771C57D8CF00CF52F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA038B791C57D8CF00CF52F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/GoSources/Products",
+				);
+				INFOPLIST_FILE = Other/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.squareup.GoMobileTesting;
+				PRODUCT_NAME = GoMobileTesting;
+			};
+			name = Debug;
+		};
+		AA038B7A1C57D8CF00CF52F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/GoSources/Products",
+				);
+				INFOPLIST_FILE = Other/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.squareup.GoMobileTesting;
+				PRODUCT_NAME = GoMobileTesting;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA038B5F1C57D8CE00CF52F5 /* Build configuration list for PBXProject "GoMobileMemoryTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA038B761C57D8CF00CF52F5 /* Debug */,
+				AA038B771C57D8CF00CF52F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA038B781C57D8CF00CF52F5 /* Build configuration list for PBXNativeTarget "GoMobileMemoryTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA038B791C57D8CF00CF52F5 /* Debug */,
+				AA038B7A1C57D8CF00CF52F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA038B5C1C57D8CE00CF52F5 /* Project object */;
+}
